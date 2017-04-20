@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+public class Swapping {
+	public static void main (String args[])
+	{
+		int FirstNumber,SecondNumber;
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Please Input the First Number");
+		FirstNumber=sc.nextInt();
+		System.out.println("Please Input the Second Number");
+		SecondNumber=sc.nextInt();
+	    System.out.println("The Numbers before swapping are : ");
+	    System.out.println("First Number "+FirstNumber);
+	    System.out.println("Second Number "+SecondNumber);
+	    
+	    FirstNumber = FirstNumber + SecondNumber;  
+	    SecondNumber = FirstNumber - SecondNumber; 
+	    FirstNumber = FirstNumber - SecondNumber;
+	    
+	    System.out.println("The Numbers after swapping are : ");
+	    System.out.println("First Number "+FirstNumber);
+	    System.out.println("Second Number "+SecondNumber);	    
+	}
+
+}
